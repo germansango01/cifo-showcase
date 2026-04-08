@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conoce el CIFO La Violeta, su misión, visión, áreas formativas y los datos que hacen de este centro un referente en formación profesional en Barcelona.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sobre el Centro — CIFO Violeta Showcase">
+    <meta property="og:description"
+        content="Conoce el CIFO La Violeta, su misión, visión, áreas formativas y los datos que hacen de este centro un referente en formación profesional en Barcelona.">
+    <meta property="og:image" content="https://picsum.photos/seed/cifo-about/1200/630">
+    <meta property="og:site_name" content="CIFO Violeta Showcase">
+
+    <title>Sobre el Centro — CIFO Violeta Showcase</title>
+
+    <!-- Favicon placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9F%A3%3C/text%3E%3C/svg%3E">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/base/utilities.css">
+    <link rel="stylesheet" href="css/base/print.css">
+
+    <!-- CSS Layout -->
+    <link rel="stylesheet" href="css/layout/page.css">
+    <link rel="stylesheet" href="css/layout/container.css">
+
+    <!-- CSS Components -->
+    <link rel="stylesheet" href="css/components/badge.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/language-switcher.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+
+    <!-- CSS Pages -->
+    <link rel="stylesheet" href="css/pages/about.css">
+</head>
+
+<body class="page">
+
+    <!-- Skip to content — Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+    <!-- Blade: @include('layouts.header') -->
+    <!-- ═══════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════ -->
+    <header class="site-header" role="banner">
+        <div class="container">
+            <nav class="header" aria-label="Navegación principal">
+
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <a href="index.html" class="header-logo" aria-label="CIFO Violeta Showcase — Inicio">
+                        <img src="img/logo-placeholder.svg" alt="CIFO La Violeta" width="200" height="48">
+                    </a>
+
+                    <!-- Desktop nav links -->
+                    <div class="header-nav" role="list">
+                        <a href="index.html" class="nav-link" role="listitem">Inicio</a>
+                        <a href="projects.html" class="nav-link" role="listitem">Proyectos</a>
+                        <a href="about.html" class="nav-link" aria-current="page" role="listitem">Sobre el Centro</a>
+                    </div>
+
+                    <!-- Actions: language switcher + hamburger -->
+                    <div class="header-actions">
+                        <!-- Language switcher placeholder -->
+                        <div class="lang-switcher desktop-only" aria-label="Seleccionar idioma">
+                            <span class="lang-switcher-option" role="button" tabindex="0" aria-pressed="true">CA</span>
+                            <span class="lang-switcher-sep" aria-hidden="true">/</span>
+                            <span class="lang-switcher-option" role="button" tabindex="0" aria-pressed="false">ES</span>
+                        </div>
+
+                        <!-- Hamburger button (mobile) -->
+                        <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+                            aria-controls="mobile-nav">
+                            <span class="menu-icon" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════ -->
+    <main id="main-content">
+        <!-- ─────────────────────────────────────
+         HERO
+         ───────────────────────────────────── -->
+        <section class="about-hero" aria-labelledby="about-hero-title">
+            <div class="container">
+
+                <!-- Breadcrumb -->
+                <nav class="about-hero-breadcrumb" aria-label="Ruta de navegación">
+                    <ol>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li aria-hidden="true">
+                            <span class="breadcrumb-sep">›</span>
+                        </li>
+                        <li>
+                            <span class="breadcrumb-current" aria-current="page">Sobre el Centro</span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="about-hero-content reveal">
+                    <h1 id="about-hero-title">CIFO La Violeta</h1>
+                    <p>Centre d'Innovació i Formació Ocupacional de Barcelona. Formando a
+                        los profesionales del mañana desde 2005.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ─────────────────────────────────────
+         MISIÓN Y VISIÓN
+         ───────────────────────────────────── -->
+        <section class="about-mission" aria-labelledby="about-mission-title">
+            <div class="container">
+
+                <header class="about-mission-header reveal">
+                    <h2 class="about-mission-title" id="about-mission-title">Nuestra identidad</h2>
+                    <p class="about-mission-intro">Impulsamos la formación profesional con rigor, innovación y vocación
+                        de servicio a la comunidad.</p>
+                </header>
+
+                <!-- Split 1: Misión — imagen izquierda, texto derecha -->
+                <div class="about-split reveal">
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-mission/800/600"
+                            alt="Alumnos colaborando en el aula de informática del CIFO La Violeta"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                                <circle cx="20" cy="20" r="8" fill="currentColor" opacity="0.2" />
+                                <circle cx="20" cy="20" r="3" fill="currentColor" />
+                                <line x1="20" y1="2" x2="20" y2="10" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="20" y1="30" x2="20" y2="38" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="2" y1="20" x2="10" y2="20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="30" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Misión</h3>
+                        <p>Proporcionar formación profesional de calidad, orientada al mercado laboral real, que
+                            capacite a nuestros alumnos con las competencias técnicas y transversales necesarias para
+                            desarrollar su carrera en el sector tecnológico con éxito y responsabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Split 2: Visión — texto izquierda, imagen derecha -->
+                <div class="about-split reveal" data-reverse>
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-vision/800/600"
+                            alt="Vista de las instalaciones modernas del CIFO La Violeta en Barcelona"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 8C10 8 3 20 3 20C3 20 10 32 20 32C30 32 37 20 37 20C37 20 30 8 20 8Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2" />
+                                <circle cx="20" cy="20" r="2.5" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>Visión</h3>
+                        <p>Ser el centro de formación profesional tecnológica de referencia en Barcelona, reconocido
+                            por la excelencia de sus graduados, la innovación pedagógica y su estrecha colaboración
+                            con el tejido empresarial y las instituciones públicas del sector.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ─────────────────────────────────────
+         CIFRAS CLAVE
+         ───────────────────────────────────── -->
+        <section class="about-stats" aria-labelledby="about-stats-title">
+            <div class="container">
+
+                <header class="about-stats-header reveal">
+                    <h2 class="about-stats-title" id="about-stats-title">El CIFO en cifras</h2>
+                    <p class="about-stats-intro">Dos décadas de trayectoria avalan nuestro compromiso con la formación
+                        profesional tecnológica.</p>
+                </header>
+
+                <div class="about-stats-grid">
+
+                    <div class="about-stats-item reveal">
+                        <span class="about-stats-number" aria-label="Más de 500 alumnos formados">+500</span>
+                        <span class="about-stats-label">Alumnos formados</span>
+                    </div>
+
+                    <div class="about-stats-item reveal">
+                        <span class="about-stats-number" aria-label="Más de 120 proyectos fin de ciclo">+120</span>
+                        <span class="about-stats-label">Proyectos fin de ciclo</span>
+                    </div>
+
+                    <div class="about-stats-item reveal">
+                        <span class="about-stats-number" aria-label="20 años de historia">20</span>
+                        <span class="about-stats-label">Años de historia</span>
+                    </div>
+
+                    <div class="about-stats-item reveal">
+                        <span class="about-stats-number" aria-label="20 docentes especializados">20</span>
+                        <span class="about-stats-label">Docentes especializados</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ─────────────────────────────────────
+         ÁREAS FORMATIVAS
+         ───────────────────────────────────── -->
+        <section class="about-programs" aria-labelledby="about-programs-title">
+            <div class="container">
+
+                <header class="about-programs-header reveal">
+                    <h2 class="about-programs-title" id="about-programs-title">Ciclos formativos</h2>
+                    <p class="about-programs-intro">Cuatro itinerarios de Grado Superior adaptados a las demandas
+                        actuales del mercado tecnológico.</p>
+                </header>
+
+                <!-- Split DAW — imagen izquierda, contenido derecha -->
+                <div class="about-split reveal" aria-labelledby="program-daw-title">
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-daw/800/600"
+                            alt="Alumno trabajando en el desarrollo de una aplicación web en el CIFO"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor"
+                                    stroke-width="2" />
+                                <line x1="4" y1="17" x2="44" y2="17" stroke="currentColor" stroke-width="2" />
+                                <circle cx="10" cy="12.5" r="1.5" fill="currentColor" />
+                                <circle cx="16" cy="12.5" r="1.5" fill="currentColor" />
+                                <circle cx="22" cy="12.5" r="1.5" fill="currentColor" />
+                                <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="24" y1="36" x2="24" y2="40" stroke="currentColor" stroke-width="2" />
+                                <path d="M16 25L20 29L16 33" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <line x1="22" y1="33" x2="30" y2="33" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <span class="badge" data-cycle="daw">DAW</span>
+                        <h3 id="program-daw-title">Desarrollo de Aplicaciones Web</h3>
+                        <p>Diseño, desarrollo y mantenimiento de aplicaciones web. HTML, CSS, JavaScript, frameworks
+                            modernos, bases de datos y backend.</p>
+                    </div>
+                </div>
+
+                <!-- Split DAM — contenido izquierda, imagen derecha -->
+                <div class="about-split reveal" data-reverse aria-labelledby="program-dam-title">
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-dam/800/600"
+                            alt="Alumna desarrollando una aplicación móvil en el laboratorio del CIFO"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="14" y="4" width="20" height="36" rx="3" stroke="currentColor"
+                                    stroke-width="2" />
+                                <line x1="14" y1="10" x2="34" y2="10" stroke="currentColor" stroke-width="2" />
+                                <line x1="14" y1="34" x2="34" y2="34" stroke="currentColor" stroke-width="2" />
+                                <circle cx="24" cy="38" r="1.5" fill="currentColor" />
+                                <rect x="8" y="12" width="14" height="22" rx="2" stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <line x1="8" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5" />
+                                <line x1="8" y1="29" x2="22" y2="29" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <span class="badge" data-cycle="dam">DAM</span>
+                        <h3 id="program-dam-title">Desarrollo de Aplicaciones Multiplataforma</h3>
+                        <p>Desarrollo de software para múltiples entornos: escritorio, móvil y web. Android, Kotlin,
+                            Java, Flutter y arquitecturas cliente-servidor.</p>
+                    </div>
+                </div>
+
+                <!-- Split ASIR — imagen izquierda, contenido derecha -->
+                <div class="about-split reveal" aria-labelledby="program-asir-title">
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-asir/800/600"
+                            alt="Rack de servidores en el aula de sistemas del CIFO La Violeta"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="16" width="40" height="20" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <rect x="4" y="8" width="40" height="6" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="40" cy="11" r="1.5" fill="currentColor" />
+                                <circle cx="35" cy="11" r="1.5" fill="currentColor" />
+                                <rect x="8" y="20" width="12" height="4" rx="1" stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <circle cx="40" cy="26" r="1.5" fill="currentColor" />
+                                <circle cx="35" cy="26" r="1.5" fill="currentColor" />
+                                <line x1="20" y1="36" x2="20" y2="42" stroke="currentColor" stroke-width="2" />
+                                <line x1="28" y1="36" x2="28" y2="42" stroke="currentColor" stroke-width="2" />
+                                <line x1="14" y1="42" x2="34" y2="42" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span class="badge" data-cycle="asir">ASIR</span>
+                        <h3 id="program-asir-title">Administración de Sistemas Informáticos en Red</h3>
+                        <p>Instalación, configuración y administración de sistemas operativos y redes. Linux, Windows
+                            Server, virtualización, ciberseguridad y cloud.</p>
+                    </div>
+                </div>
+
+                <!-- Split SMX — contenido izquierda, imagen derecha -->
+                <div class="about-split reveal" data-reverse aria-labelledby="program-smx-title">
+                    <div class="about-split-media">
+                        <img src="https://picsum.photos/seed/cifo-smx/800/600"
+                            alt="Alumno realizando mantenimiento de equipos microinformáticos en el CIFO"
+                            width="800" height="600" loading="lazy">
+                    </div>
+                    <div class="about-split-content">
+                        <div class="about-split-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="10" width="36" height="24" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <line x1="6" y1="17" x2="42" y2="17" stroke="currentColor" stroke-width="2" />
+                                <line x1="16" y1="38" x2="32" y2="38" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="24" y1="34" x2="24" y2="38" stroke="currentColor" stroke-width="2" />
+                                <path d="M14 24L18 28L26 22" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="10" cy="13.5" r="1" fill="currentColor" />
+                                <circle cx="14" cy="13.5" r="1" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="badge" data-cycle="smx">SMX</span>
+                        <h3 id="program-smx-title">Sistemas Microinformáticos y Redes</h3>
+                        <p>Instalación y mantenimiento de equipos microinformáticos, periféricos y redes locales.
+                            Soporte técnico, diagnóstico y resolución de incidencias.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Blade: @include('layouts.footer') -->
+    <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+
+                <!-- Footer top -->
+                <div class="footer-top">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <p class="footer-brand-name">CIFO La Violeta</p>
+                        <p class="footer-brand-desc">Centre d'Innovació i Formació Ocupacional. Formación profesional
+                            de calidad en Barcelona desde 2005.</p>
+                    </div>
+
+                    <!-- Link groups -->
+                    <div class="footer-links">
+                        <div>
+                            <p class="footer-link-group-title">Navegación</p>
+                            <div class="footer-link-group-items">
+                                <a href="index.html" class="footer-link">Inicio</a>
+                                <a href="projects.html" class="footer-link">Proyectos</a>
+                                <a href="about.html" class="footer-link">Sobre el Centro</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="footer-link-group-title">Ciclos Formativos</p>
+                            <div class="footer-link-group-items">
+                                <span class="footer-cycle-item">DAW — Desarrollo Web</span>
+                                <span class="footer-cycle-item">DAM — Desarrollo Multiplataforma</span>
+                                <span class="footer-cycle-item">ASIR — Admin. Sistemas</span>
+                                <span class="footer-cycle-item">SMX — Microinformática</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 CIFO La Violeta — Barcelona. Todos los derechos reservados.</p>
+                    <p>Hecho con dedicación por los alumnos del CIFO.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Blade: @include('components.mobile-nav') -->
+    <!-- Mobile nav drawer — outside header to avoid stacking context conflict -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-inner">
+            <div class="mobile-close">
+                <button class="mobile-close-btn" aria-label="Cerrar menú">&#x2715;</button>
+            </div>
+            <a href="index.html" class="mobile-nav-link">Inicio</a>
+            <a href="projects.html" class="mobile-nav-link">Proyectos</a>
+            <a href="about.html" class="mobile-nav-link" aria-current="page">Sobre el Centro</a>
+            <!-- Language switcher in mobile -->
+            <div class="lang-switcher" style="padding: var(--space-3) var(--space-4);" aria-label="Seleccionar idioma">
+                <span class="lang-switcher-option" role="button" tabindex="0">CA</span>
+                <span class="lang-switcher-sep" aria-hidden="true">/</span>
+                <span class="lang-switcher-option" role="button" tabindex="0">ES</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
